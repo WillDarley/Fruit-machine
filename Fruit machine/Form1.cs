@@ -20,24 +20,64 @@ namespace Fruit_machine
         {
             InitializeComponent(); 
         }
-
+        // all the possible results
         string[] fruitoptions = { "Cherry", "Bell", "Lemon", "Orange", "Star", "skull" };
+       
         int balance = 1;
+       
         double costforgo = 0.2;
 
+
+
+
+        private void btnGo_Click(object sender, EventArgs e)
+        {
+            // once this butoon is pressed initiate a random choosing of an item from the array to all 3 labels
+
+            { // randomiser for result 1
+                Random r = new Random();
+                string randomFruit1 = fruitoptions[r.Next(fruitoptions.Length)]; // chooses a random item from the array 
+
+                lblresult1.Text = randomFruit1;
+            }
+
+            { // randomiser for result 2
+                Random r = new Random();
+                string randomFruit2 = fruitoptions[r.Next(fruitoptions.Length)]; // chooses a random item from the array 
+
+                lblresult2.Text = randomFruit2;
+            }
+
+            { // randomiser for result 3
+                Random r = new Random();
+                string randomFruit3 = fruitoptions[r.Next(fruitoptions.Length)]; // chooses a random item from the array 
+
+                lblresult3.Text = randomFruit3;
+            }
+
+            // sets the balance label to the integer variable 'balance'
+            lblBalance.Text = int.Parse(balance);
+           
+            // sets the value of balance every time the vutton is presseded and decreases it by 0.2
+            {
+                lblBalance.Text = balance - costforgo;
+            }
+           
+        }
+
+        
+       
+
+        // not needed
+        private void lblresult1_Click(object sender, EventArgs e)
+        {
+
+        }
 
         // not needed
         private void lblresult3_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnGo_Click(object sender, EventArgs e)
-        {
-            // once this butoon is pressed initiate a random choosing of an item from the array fro all 3 labels
-
-            Random r = new Random();
-            string randomFruit = fruitoptions[r.Next(fruitoptions.Length)]; // chooses a random item from the array 
         }
     }
 }
