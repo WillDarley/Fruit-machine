@@ -21,7 +21,9 @@ namespace Fruit_machine
             InitializeComponent(); 
         }
 
-
+        string[] fruitoptions = { "Cherry", "Bell", "Lemon", "Orange", "Star", "skull" };
+        int balance = 1;
+        double costforgo = 0.2;
 
 
         // not needed
