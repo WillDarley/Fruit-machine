@@ -18,7 +18,7 @@ namespace Fruit_machine
         // The player loses £1 if two skulls are rolled and all of his/her money if three skulls are rolled.The player can choose to quit with the winnings after each roll or keep playing until there is no money left.
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
         private void lblresult3_Click(object sender, EventArgs e)
