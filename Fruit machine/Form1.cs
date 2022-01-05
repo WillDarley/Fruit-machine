@@ -21,6 +21,10 @@ namespace Fruit_machine
             InitializeComponent(); 
         }
 
+
+
+
+        // not needed
         private void lblresult3_Click(object sender, EventArgs e)
         {
 
