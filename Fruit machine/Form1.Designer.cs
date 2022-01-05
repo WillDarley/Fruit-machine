@@ -40,7 +40,7 @@
             // 
             this.lblresult1.AutoSize = true;
             this.lblresult1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblresult1.Location = new System.Drawing.Point(105, 118);
+            this.lblresult1.Location = new System.Drawing.Point(93, 118);
             this.lblresult1.Name = "lblresult1";
             this.lblresult1.Size = new System.Drawing.Size(181, 55);
             this.lblresult1.TabIndex = 0;
@@ -76,6 +76,7 @@
             this.btnGo.TabIndex = 3;
             this.btnGo.Text = "Press to Play!";
             this.btnGo.UseVisualStyleBackColor = true;
+            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
             // 
             // btnWithdraw
             // 

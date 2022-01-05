@@ -31,5 +31,13 @@ namespace Fruit_machine
         {
 
         }
+
+        private void btnGo_Click(object sender, EventArgs e)
+        {
+            // once this butoon is pressed initiate a random choosing of an item from the array fro all 3 labels
+
+            Random r = new Random();
+            string randomFruit = fruitoptions[r.Next(fruitoptions.Length)]; // chooses a random item from the array 
+        }
     }
 }
