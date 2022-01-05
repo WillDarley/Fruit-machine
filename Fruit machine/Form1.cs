@@ -16,5 +16,10 @@ namespace Fruit_machine
         {
             InitializeComponent();
         }
+
+        private void lblresult3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
