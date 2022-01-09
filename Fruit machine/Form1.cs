@@ -29,11 +29,11 @@ namespace Fruit_machine
 
 
 
-
         private void btnGo_Click(object sender, EventArgs e)
         {
             // once this butoon is pressed initiate a random choosing of an item from the array to all 3 labels
 
+            
             { // randomiser for result 1
                 Random r = new Random();
                 string randomFruit1 = fruitoptions[r.Next(fruitoptions.Length)]; // chooses a random item from the array 
@@ -53,6 +53,12 @@ namespace Fruit_machine
                 string randomFruit3 = fruitoptions[r.Next(fruitoptions.Length)]; // chooses a random item from the array 
 
                 lblresult3.Text = randomFruit3;
+            }
+
+            if (lblresult1.Text == lblresult2.Text & lblresult2.Text == lblresult3.Text & lblresult1.Text == lblresult3.Text)
+            {
+                MessageBox.Show("WINNER!!, you matched all 3 symbols!"); // if all 3 symbols are the same then display this
+                this.balance = balance + 5; // adds £5 to the balance
             }
 
             // sets the balance label to the integer variable 'balance'
