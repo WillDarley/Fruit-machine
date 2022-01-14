@@ -33,7 +33,7 @@ namespace Fruit_machine
 
         private void btnGo_Click(object sender, EventArgs e)
         {
-            lblBalance.Text = $"£{balance - costforgo}";
+            lblBalance.Text = $"£{balance = balance - costforgo}";
 
 
             // once this butoon is pressed initiate a random choosing of an item from the array to all 3 labels
@@ -63,7 +63,7 @@ namespace Fruit_machine
             if (lblresult1.Text == lblresult2.Text & lblresult2.Text == lblresult3.Text & lblresult1.Text == lblresult3.Text)
             {
                 MessageBox.Show("WINNER!!, you matched all 3 symbols!"); // if all 3 symbols are the same then display this
-                this.balance = balance + 5; // adds £5 to the balance
+                balance = balance + 5; // adds £5 to the balance
             }
 
            
