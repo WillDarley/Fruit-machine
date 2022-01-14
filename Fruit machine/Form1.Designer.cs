@@ -40,10 +40,9 @@
             // 
             this.lblresult1.AutoSize = true;
             this.lblresult1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblresult1.Location = new System.Drawing.Point(186, 227);
-            this.lblresult1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblresult1.Location = new System.Drawing.Point(93, 118);
             this.lblresult1.Name = "lblresult1";
-            this.lblresult1.Size = new System.Drawing.Size(358, 108);
+            this.lblresult1.Size = new System.Drawing.Size(181, 55);
             this.lblresult1.TabIndex = 0;
             this.lblresult1.Text = "result 1";
             this.lblresult1.Click += new System.EventHandler(this.lblresult1_Click);
@@ -52,10 +51,9 @@
             // 
             this.lblresult2.AutoSize = true;
             this.lblresult2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblresult2.Location = new System.Drawing.Point(668, 227);
-            this.lblresult2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblresult2.Location = new System.Drawing.Point(334, 118);
             this.lblresult2.Name = "lblresult2";
-            this.lblresult2.Size = new System.Drawing.Size(358, 108);
+            this.lblresult2.Size = new System.Drawing.Size(181, 55);
             this.lblresult2.TabIndex = 1;
             this.lblresult2.Text = "result 2";
             // 
@@ -63,10 +61,9 @@
             // 
             this.lblresult3.AutoSize = true;
             this.lblresult3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblresult3.Location = new System.Drawing.Point(1126, 227);
-            this.lblresult3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblresult3.Location = new System.Drawing.Point(563, 118);
             this.lblresult3.Name = "lblresult3";
-            this.lblresult3.Size = new System.Drawing.Size(358, 108);
+            this.lblresult3.Size = new System.Drawing.Size(181, 55);
             this.lblresult3.TabIndex = 2;
             this.lblresult3.Text = "result 3";
             this.lblresult3.Click += new System.EventHandler(this.lblresult3_Click);
@@ -74,10 +71,9 @@
             // btnGo
             // 
             this.btnGo.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGo.Location = new System.Drawing.Point(54, 565);
-            this.btnGo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnGo.Location = new System.Drawing.Point(27, 294);
             this.btnGo.Name = "btnGo";
-            this.btnGo.Size = new System.Drawing.Size(518, 175);
+            this.btnGo.Size = new System.Drawing.Size(259, 91);
             this.btnGo.TabIndex = 3;
             this.btnGo.Text = "Press to Play!";
             this.btnGo.UseVisualStyleBackColor = true;
@@ -86,37 +82,35 @@
             // btnWithdraw
             // 
             this.btnWithdraw.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWithdraw.Location = new System.Drawing.Point(920, 565);
-            this.btnWithdraw.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnWithdraw.Location = new System.Drawing.Point(460, 294);
             this.btnWithdraw.Name = "btnWithdraw";
-            this.btnWithdraw.Size = new System.Drawing.Size(656, 212);
+            this.btnWithdraw.Size = new System.Drawing.Size(328, 110);
             this.btnWithdraw.TabIndex = 4;
             this.btnWithdraw.Text = "Press to withdraw winnings!";
             this.btnWithdraw.UseVisualStyleBackColor = true;
+            this.btnWithdraw.Click += new System.EventHandler(this.btnWithdraw_Click);
             // 
             // lblBalance
             // 
             this.lblBalance.AutoSize = true;
             this.lblBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBalance.Location = new System.Drawing.Point(24, 37);
-            this.lblBalance.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblBalance.Location = new System.Drawing.Point(12, 19);
             this.lblBalance.Name = "lblBalance";
-            this.lblBalance.Size = new System.Drawing.Size(265, 73);
+            this.lblBalance.Size = new System.Drawing.Size(132, 37);
             this.lblBalance.TabIndex = 5;
             this.lblBalance.Text = "Balance";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1600, 865);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblBalance);
             this.Controls.Add(this.btnWithdraw);
             this.Controls.Add(this.btnGo);
             this.Controls.Add(this.lblresult3);
             this.Controls.Add(this.lblresult2);
             this.Controls.Add(this.lblresult1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
