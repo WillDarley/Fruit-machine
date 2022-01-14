@@ -20,20 +20,25 @@ namespace Fruit_machine
         {
             InitializeComponent(); 
         }
+
         // all the possible results
         string[] fruitoptions = { "Cherry", "Bell", "Lemon", "Orange", "Star", "skull" };
        
-        int balance = 1;
-       
+        public double balance = 1;
+
         double costforgo = 0.2;
+
 
 
 
         private void btnGo_Click(object sender, EventArgs e)
         {
+            lblBalance.Text = $"£{balance - costforgo}";
+
+
             // once this butoon is pressed initiate a random choosing of an item from the array to all 3 labels
 
-            
+
             { // randomiser for result 1
                 Random r = new Random();
                 string randomFruit1 = fruitoptions[r.Next(fruitoptions.Length)]; // chooses a random item from the array 
@@ -61,18 +66,23 @@ namespace Fruit_machine
                 this.balance = balance + 5; // adds £5 to the balance
             }
 
-            // sets the balance label to the integer variable 'balance'
-            lblBalance.Text = int.Parse(balance);
            
-            // sets the value of balance every time the vutton is presseded and decreases it by 0.2
-            {
-                lblBalance.Text = balance - costforgo;
-            }
+            lblBalance.Text = $"£{balance}";
            
         }
 
         
+      
        
+
+
+
+
+
+
+
+
+
 
         // not needed
         private void lblresult1_Click(object sender, EventArgs e)
